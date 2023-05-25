@@ -1,27 +1,172 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <!-- do not remove this line! -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+
+        <title>Home PEC2 HTML Y CSS II</title>
+    </head>
+    <body>
+        <nav class="flexbox-container">
+            <include src="./views/nav.html"></include>
+        </nav>
+
+        <main class="container-home">
+            <h1 class="h1">TU CLUB DE AJEDREZ</h1>
+            <div class="grid">
+                <div class="item item1 blancas">
+                    <i class="item fas fa-chess-rook"></i>
+                </div>
+                <div class="item item2 blancas">
+                    <i class="fas fa-chess-knight"></i>
+                </div>
+                <div class="item item1 blancas">
+                    <i class="fas fa-chess-bishop"></i>
+                </div>
+                <div class="item item2 blancas">
+                    <i class="fas fa-chess-king"></i>
+                </div>
+                <div class="item item1 blancas">
+                    <i class="fas fa-chess-queen"></i>
+                </div>
+                <div class="item item2 blancas">
+                    <i class="fas fa-chess-bishop"></i>
+                </div>
+                <div class="item item1 blancas">
+                    <i class="fas fa-chess-knight"></i>
+                </div>
+                <div class="item item2 blancas">
+                    <i class="fas fa-chess-rook"></i>
+                </div>
+
+                <div class="item item2 blancas">
+                    <i class="fas fa-chess-pawn"></i>
+                </div>
+                <div class="item item1 blancas">
+                    <i class="fas fa-chess-pawn"></i>
+                </div>
+                <div class="item item2 blancas">
+                    <i class="fas fa-chess-pawn"></i>
+                </div>
+                <div class="item item1 blancas">
+                    <i class="fas fa-chess-pawn"></i>
+                </div>
+                <div class="item item2 blancas">
+                    <i class="fas fa-chess-pawn"></i>
+                </div>
+                <div class="item item1 blancas">
+                    <i class="fas fa-chess-pawn"></i>
+                </div>
+                <div class="item item2 blancas">
+                    <i class="fas fa-chess-pawn"></i>
+                </div>
+                <div class="item item1 blancas">
+                    <i class="fas fa-chess-pawn"></i>
+                </div>
+
+                <div class="item item1"></div>
+                <div class="item item2"></div>
+                <div class="item item1"></div>
+                <div class="item item2"></div>
+                <div class="item item1"></div>
+                <div class="item item2"></div>
+                <div class="item item1"></div>
+                <div class="item item2"></div>
+
+                <div class="item item2"></div>
+                <div class="item item1"></div>
+                <div class="item item2"></div>
+                <div class="item item1"></div>
+                <div class="item item2"></div>
+                <div class="item item1"></div>
+                <div class="item item2"></div>
+                <div class="item item1"></div>
+
+                <div class="item item1"></div>
+                <div class="item item2"></div>
+                <div class="item item1"></div>
+                <div class="item item2"></div>
+                <div class="item item1"></div>
+                <div class="item item2"></div>
+                <div class="item item1"></div>
+                <div class="item item2"></div>
+
+                <div class="item item2"></div>
+                <div class="item item1"></div>
+                <div class="item item2"></div>
+                <div class="item item1"></div>
+                <div class="item item2"></div>
+                <div class="item item1"></div>
+                <div class="item item2"></div>
+                <div class="item item1"></div>
+
+                <div class="item item1 negras">
+                    <i class="fas fa-chess-pawn"></i>
+                </div>
+                <div class="item item2 negras">
+                    <i class="fas fa-chess-pawn"></i>
+                </div>
+                <div class="item item1 negras">
+                    <i class="fas fa-chess-pawn"></i>
+                </div>
+                <div class="item item2 negras">
+                    <i class="fas fa-chess-pawn"></i>
+                </div>
+                <div class="item item1 negras">
+                    <i class="fas fa-chess-pawn"></i>
+                </div>
+                <div class="item item2 negras">
+                    <i class="fas fa-chess-pawn"></i>
+                </div>
+                <div class="item item1 negras">
+                    <i class="fas fa-chess-pawn"></i>
+                </div>
+                <div class="item item2 negras">
+                    <i class="fas fa-chess-pawn"></i>
+                </div>
+
+                <div class="item item2 negras">
+                    <i class="fas fa-chess-rook"></i>
+                </div>
+                <div class="item item1 negras">
+                    <i class="fas fa-chess-knight"></i>
+                </div>
+                <div class="item item2 negras">
+                    <i class="fas fa-chess-bishop"></i>
+                </div>
+                <div class="item item1 negras">
+                    <i class="fas fa-chess-king"></i>
+                </div>
+                <div class="item item2 negras">
+                    <i class="fas fa-chess-queen"></i>
+                </div>
+                <div class="item item1 negras">
+                    <i class="fas fa-chess-bishop"></i>
+                </div>
+                <div class="item item2 negras">
+                    <i class="fas fa-chess-knight"></i>
+                </div>
+                <div class="item item1 negras">
+                    <i class="fas fa-chess-rook"></i>
+                </div>
+            </div>
+        </main>
+        <footer class="flexbox-container">
+            <include src="./views/footer.html"></include>
+        </footer>
+
+        <script type="module" src="./assets/scripts/main.js"></script>
+        <!-- do not remove this line! -->
+    </body>
 </html>

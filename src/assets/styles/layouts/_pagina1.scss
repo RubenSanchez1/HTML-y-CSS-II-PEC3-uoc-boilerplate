@@ -1,0 +1,143 @@
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.flexbox-container {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.flexbox-container > div {
+  width: 30%;
+}
+
+.alto-container {
+  height: 100vh;
+}
+
+/*Tamaño pequeño*/
+
+@media (max-width: 576px) {
+  .flexbox-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flexbox-container > div {
+    width: 75%;
+  }
+
+  .alto-container {
+    height: 50vh;
+  }
+}
+
+/*Tamaño medio*/
+
+@media (max-width: 768px) and (min-width: 576px) {
+  .flexbox-container {
+    max-width: 540px;
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flexbox-container > div {
+    width: 75%;
+  }
+
+  .alto-container {
+    height: 50vh;
+  }
+}
+
+/*Tamaño grande*/
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .flexbox-container {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .flexbox-container > div {
+    width: 45%;
+  }
+
+  .alto-container {
+    height: 50vh;
+  }
+}
+
+/*Tamaño extra grande*/
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .flexbox-container {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .flexbox-container > div {
+    width: 30%;
+  }
+
+  .alto-container {
+    height: 50vh;
+  }
+}
+
+/*Tamaño extra extra grande*/
+
+@media (min-width: 1200px) {
+  .flexbox-container {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .flexbox-container > div {
+    width: 30%;
+  }
+
+  .alto-container {
+    height: 50vh;
+  }
+}

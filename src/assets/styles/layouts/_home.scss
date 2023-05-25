@@ -1,57 +1,113 @@
-* {
-  box-sizing: border-box;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  border: solid 3px $texto-negro;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0;
-  padding: 2rem;
-  font-family: $font-family-sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
-}
-
-.uoc-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 2rem;
+h1 {
+  color: $texto-azul;
+  font-size: 2rem;
   text-align: center;
-  background-color: #fff;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding-bottom: 20px;
 }
 
-.uoc-logo {
-  display: block;
-  margin-left: auto;
+i {
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.item {
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.item1 {
+  background-color: white;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.item2 {
+  background-color: black;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+.blancas {
+  color: $texto-azul-claro;
+}
+
+.negras {
+  color: $figuras-ajedrez;
+}
+
+.container-home {
   margin-right: auto;
-  margin-bottom: 1.5rem;
-  max-width: 200px;
-  height: auto;
+  margin-left: auto;
+  align-items: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: 100%;
+}
 
-  @media (min-width: $mqMinWidth) {
-    max-width: none;
+/*Tamaño medio*/
+
+@media (max-width: 768px) and (min-width: 576px) {
+  .container-home {
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 100%;
+  }
+}
+/*Tamaño grande*/
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .container-home {
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 90%;
+  }
+}
+/*Tamaño extra grande*/
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .container-home {
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 90%;
   }
 }
 
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: $uoc-corporate;
+/*Tamaño extra extra grande*/
 
-  @media (min-width: $mqMinWidth) {
-    font-size: 36px;
+@media (min-width: 1200px) {
+  .container-home {
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 90%;
   }
-}
-
-.uoc-footer {
-  margin-top: 1.5rem;
-  font-size: 0.75rem;
-  text-align: center;
 }

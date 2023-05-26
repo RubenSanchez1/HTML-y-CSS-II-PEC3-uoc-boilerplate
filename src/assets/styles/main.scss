@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+
 /**
  * Use this file to import partials.
  * Do not include SCSS code in this file.
@@ -33,3 +36,4 @@
 /**
  * Do NOT include anything else in this file!
  */
+@tailwind utilities;

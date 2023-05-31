@@ -21,15 +21,38 @@
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
 
+@layer components {
+  .main__h2 {
+    @apply text-textoAzul text-t14xl  text-left py-4;
+  }
+
+  .main__h3 {
+    @apply text-textoAzul text-lg text-left pb-2.5;
+  }
+
+  .body__p {
+    @apply text-textoAzul text-base;
+  }
+
+  .main__article {
+    @apply m-auto text-base font-bold text-center w-1/2 text-textoAzul text-base;
+  }
+}
 /**
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
 
 @import "layouts/home";
+/*
+No importo esta página para la PEC 3.
 @import "layouts/pagina1";
+*/
 @import "layouts/pagina2";
+/*
+No importo esta página para la PEC 3.
 @import "layouts/pagina3";
+*/
 @import "layouts/nav";
 @import "layouts/footer";
 

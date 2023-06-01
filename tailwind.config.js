@@ -2,7 +2,6 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
     colors: {
       white: "#ffffff",
       black: "#0a0a0a",
@@ -31,6 +30,11 @@ module.exports = {
   extend: {
     borderWidth: {
       "3bpx": "3px",
+    },
+
+    gridTemplateColumns: {
+      "grid-cols-8": "repeat(8, minmax(0, 1fr))",
+      "grid-rows-8": "repeat(8, minmax(0, 1fr))",
     },
   },
 
